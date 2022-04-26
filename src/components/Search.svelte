@@ -8,7 +8,7 @@
 
     const search = function(event){
         dispatch('searchEvent', {
-            summoner:searchQuery,
+            summonerName:searchQuery,
             region:'na1'}) // TODO
     }
 </script>
