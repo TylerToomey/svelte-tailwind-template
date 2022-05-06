@@ -3,18 +3,20 @@
     export let description ="";
     export let image = "";
     export let link = "";
+
+    export let z = "50"
 </script>
 
 
-<div class="basis-auto mx-auto relative min-h-[475px] mb-4 max-w-[350px] max-h-[500px] bg-slate-50 z-50 group rounded-md border shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl">
+<div class="basis-auto mx-auto relative min-h-[475px] overflow-hidden mb-10 max-w-[350px] max-h-[500px] bg-slate-50 z-{z} group rounded-md border shadow-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 duration-300 hover:shadow-xl">
     <!-- IMAGE -->
     <a href={link} target="_blank">
-        <img class="relative rounded-lg w-full p-5 grayscale transition ease-in-out delay-150 group-hover:grayscale-0 duration-300 pb-0 z-50 " src={image} alt="" />
+        <img class="relative rounded-lg w-full p-5 grayscale transition ease-in-out delay-150 group-hover:grayscale-0 duration-300 pb-0 z-{z} " src={image} alt="" />
     </a>
     <!-- EMD IMAGE -->
     
     <!-- LIVE INDICATOR -->
-    <div class="relative flex justify-end pt-0 mt-0 pr-5 -z-50 transition -translate-y-7 duration-200 delay-400 group-hover:-translate-y-[0.1rem] group-hover:opacity-100">
+    <div class="relative flex overflow-hidden justify-end pt-0 mt-0 pr-5 -z-50  opacity-0 transition -translate-y-6 duration-200 delay-400 group-hover:translate-y-[0.2rem] group-hover:opacity-100">
         <div class="flex w-12 h-6 items-center justify-start bg-slate-600 rounded-b-md ml-1 text-xs text-white">
             <span class="ml-1">LIVE</span>
             <span class="animate-ping relative inline-flex h-2 w-2 my-auto ml-1 rounded-full bg-orange-600 opacity-75"></span>
